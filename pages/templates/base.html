@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>
+        {% block title %}
+            Main page
+        {% endblock title %}
+    </title>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+</head>
+<body>
+    <div>
+        {% if request.user.is_authenticated %}
+            Hello, {{request.user.first_name|default:request.user.username}}
+            <a href="{% url 'logout' %}">Log out</a>
+        {% else %}
+            <a href="{% url 'login' %}">Log in</a>
+        {% endif %}
+        
+    </div>
+    <div>
+        <h2><img src="{% static 'images/jpg/logo.jpg' %}" alt="The Analog Specialist"/></h2>
+        
+      {% include 'includes/navbar.html' %} 
+      {% block content %}
+            
+      {% endblock %}
+      {% include 'includes/footer.html' %} 
+      </div>
+</body>
+</html>
+<body>

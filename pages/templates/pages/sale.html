@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    Sale page
+{% endblock title %}
+
+{% block content %}
+    {% for product in products %}
+    <div class="product">
+        <h2>{{ product.title}}</h2>
+        <a href="{{ product.get_absolute_url}}">
+            <img src="{{ product.image.url }}" alt="Piano"/>
+        </a>
+    </div>
+    {% endfor %}
+{% endblock %}

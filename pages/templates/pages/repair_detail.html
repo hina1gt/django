@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    Sale page
+{% endblock title %}
+
+{% block content %}
+    <div class="product">
+        <h2>{{ repair.title}}</h2>
+        <img src="{{ repair.image.url }}"/>
+        <p>{{repair.date}}</p>
+        <p>This instrument is under repair.</p>
+    </div>
+{% endblock %}

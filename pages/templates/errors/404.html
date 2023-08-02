@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    Error page
+{% endblock title %}
+
+{% block content %}
+    <p >
+        <img id="error" src="{% static 'images/jpg/preview.jpg' %}" alt="The Analog Specialists"/>
+    </p>
+    <p>
+        OOps. We don't have the information you were looking for &#128549;
+    </p>
+{% endblock %}

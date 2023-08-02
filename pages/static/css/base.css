@@ -1,53 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+body {
+  font-size: 80%;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 0.15em;
+  background-color: #ffffff;
+}
+
 div {
-    color:#21586b;
-    background-color: #dcf0f7;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 32px;
-    padding-left: 100px;
-    padding-top: 50px;
-    padding-bottom: 1px;
-    padding-right: 200px;
-    margin-top: 50px;
-    margin-left: 200px;
-    margin-right: 400px;
-    margin-bottom: 50px;
+  max-width: 940px;
+  min-width: 720px;
+  margin: 10px auto 10px auto;
+  padding: 20px;
+}
 
+h2 {
+  width: 150px;
+  margin: 10px auto 25px auto;
 }
-#image {
-    position:relative;
-    left:450px;
-    bottom: 450px;
+
+ul {
+  width: 570px;
+  padding: 15px;
+  margin: 0px auto 0px auto;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  text-align: center;
 }
-#info {
-    position: relative;
-    left: 50px;
-    bottom: 10px;
+
+li {
+  display: inline;
+  margin: 0px 3px;
 }
+
+p {
+  text-align: center;
+  width: 600px;
+  margin: 20px auto 20px auto;
+  font-weight: normal;
+}
+
 a {
-    color:#2f6478;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 18px;
-    text-decoration: solid;
-    
-   
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 6px 18px 5px 18px;
 }
 
-a:hover {
-    color: rgb(9, 8, 50);
-  }
+a:hover{
+  color: #cc3333;
+}
 
-#tg {
-    position: relative;
-    right: 300px;
-    bottom: 280px;
+.product {
+  margin: 20px auto 20px auto;
+  text-align: center;
 }
-#email {
-    position: relative;
-    right: 440px;
-    bottom: 230px;
+
+.product img {
+  width: 200px;
+  height: 150px;
 }
-#inst {
-    position:absolute;
-    top: 680px;
-    left: 266px;
+
+.product h2 {
+  font-family:'Raleway', sans-serif;
+  text-transform: uppercase;
+}
+
+p #error{
+  height: 300px;
+  width: 500px;
+}
+
+#button {
+  text-align: center;
+}
+#key {
+  padding-left: 170px;
+  padding-top: 20px;
 }
